@@ -78,7 +78,6 @@ class OperationController extends Controller
       return datatables()->of($Details)
           ->addColumn('sender', function ($data){
            return User::find($data->user_id)->name;
-
           })
           ->make(true);
   }

@@ -32,6 +32,7 @@
         <ul>
             <li><i>Fields marked with <span style="color: red">*</span> are mandatory.</i></li>
             <li>Please limit purpose field for 250 characters</li>
+            <li>Unexpected errors will occur due to SMTP issues.</li>
         </ul>
     </div>
 @endsection

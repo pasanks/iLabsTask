@@ -44,7 +44,7 @@ class OperationController extends Controller
                   "sent_user" =>Auth::user()->email,
                   "receiver" =>$receiverEmail,
                   "datetime" =>Carbon::now()->format('Y-m-d H:i'),
-                  "webLink" =>(isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]/handleMoneySendRequest/".$tranKey
+                  "webLink" =>(isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]/iLabsTask/public/handleMoneySendRequest/".$tranKey
 
               );// feeding array for the Email body
 
